@@ -92,7 +92,7 @@ public class Main {
 
     public static void readFile(String filename) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(filename));
-        br.readLine();
+        br.readLine();  //skip the first line
 
         String[] resources = br.readLine().trim().split("\\s+");
         count = resources.length / 3;

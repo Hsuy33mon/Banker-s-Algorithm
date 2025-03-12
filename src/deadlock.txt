@@ -1,4 +1,4 @@
-    Allocation       Max       Available
+    Allocation       Max       Total Resources
     A  B  C  D     A  B  C  D     A  B  C  D
 P0  0  0  0  3     3  3  3  6     3  9  6  12
 P1  0  1  0  3     3  4  3  7
