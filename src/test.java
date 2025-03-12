@@ -6,8 +6,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class test {
-    private static String file = "src/deadlock.txt";
-//    private static String file = "src/data1.txt";
+//    private static String file = "src/deadlock.txt";
+    private static String file = "src/data1.txt";
     private static List<String> processes = new ArrayList<>();
     private static List<int[]> allocation = new ArrayList<>();
     private static List<int[]> max = new ArrayList<>();
@@ -63,10 +63,16 @@ public class test {
                     finished[i] = true;
                     progressMade = true;
                     System.out.println("------------");
+                    System.out.println("Updated Need Matrix : ");
                     for (int[] rowArr : need) {
                         System.out.println(Arrays.toString(rowArr));
                     }
                     System.out.println("------------");
+                    System.out.println("New Available Matrix : ");
+                    for (int j : available) {
+                        System.out.print(j + " ");
+                    }
+                    System.out.println();
                 }
             }
             if (!progressMade) {
